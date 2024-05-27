@@ -127,6 +127,10 @@
     `;
     chatMessages.appendChild(messageElement);
     chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    setTimeout(function() {
+      reply('Do you have any question?');
+    }, 200);
   
     chatInput.value = '';
 
