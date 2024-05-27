@@ -129,6 +129,17 @@
     chatMessages.scrollTop = chatMessages.scrollHeight;
   
     chatInput.value = '';
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://2432-35-245-134-149.ngrok-free.app/api?url=itsmeju58.github.io/simple_site&message="+message, true);
+    xhr.onreadystatechange = function()
+    {
+      if(xhr.readyState === 4 && xhr.status === 200)
+      {
+          alert(xhr.responseText);
+      }
+    };
+    xhr.send(null);
   
     // Reply to the user
     setTimeout(function() {
