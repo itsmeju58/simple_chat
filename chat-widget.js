@@ -70,6 +70,8 @@
     </div>
   `;
 
+  reply('Do you have any question?');
+  
   // Add event listeners
   const chatInput = document.getElementById('chat-input');
   const chatSubmit = document.getElementById('chat-submit');
@@ -77,10 +79,6 @@
   const chatBubble = document.getElementById('chat-bubble');
   const chatPopup = document.getElementById('chat-popup');
   const closePopup = document.getElementById('close-popup');
-
-  setTimeout(function() {
-      reply('Do you have any question?');
-    }, 200);
 
   chatSubmit.addEventListener('click', function() {
     
