@@ -137,15 +137,12 @@
     {
       if(xhr.readyState === 4 && xhr.status === 200)
       {
-          alert(xhr.responseText);
+          setTimeout(function() {
+            reply(xhr.responseText);
+          }, 1000);
       }
     };
     xhr.send(null);
-  
-    // Reply to the user
-    setTimeout(function() {
-      reply('Hello! This is a sample reply.');
-    }, 1000);
   }
   
   function reply(message) {
