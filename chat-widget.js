@@ -133,7 +133,7 @@
     chatInput.value = '';
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://4861-35-202-52-53.ngrok-free.app/api?url=itsmeju58.github.io/simple_site&message="+message, true);
+    xhr.open("GET", "https://23ea-34-90-101-253.ngrok-free.app/api?url=itsmeju58.github.io/simple_site&message="+message, true);
     xhr.setRequestHeader("ngrok-skip-browser-warning", true);
     xhr.onreadystatechange = function()
     {
