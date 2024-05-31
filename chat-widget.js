@@ -133,7 +133,7 @@
     chatInput.value = '';
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://23ea-34-90-101-253.ngrok-free.app/api?url=itsmeju58.github.io/simple_site&message="+message, true);
+    xhr.open("GET", "https://9a87-35-202-216-66.ngrok-free.app/api?url=itsmeju58.github.io/simple_site&message="+message, true);
     xhr.setRequestHeader("ngrok-skip-browser-warning", true);
     xhr.onreadystatechange = function()
     {
@@ -141,7 +141,7 @@
       {
           setTimeout(function() {
             reply(xhr.responseText);
-          }, 1000);
+          }, 500);
       }
     };
     xhr.send(null);
